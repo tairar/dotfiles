@@ -14,7 +14,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.ai = true
 vim.opt.si = true
-vim.opt.backspace = indent,eol,start
+vim.opt.backspace = 'indent,eol,start'
 vim.opt.showmatch = true
 
 -- searching
