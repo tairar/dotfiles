@@ -22,3 +22,7 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+--other
+vim.opt.backup = true
+vim.opt.swapfile = true
