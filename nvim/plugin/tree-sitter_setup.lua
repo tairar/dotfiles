@@ -1,17 +1,29 @@
-require'nvim-treesitter.configs'.setup {
-	  autotag = {
-			    enable = true,
-		}
-}
+local status, ts = pcall(require, "nvim-treesitter.configs")
+if (not status) then return end
 
-vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics,
-    {
-        underline = true,
-        virtual_text = {
-            spacing = 5,
-            severity_limit = 'Warning',
-        },
-        update_in_insert = true,
-    }
-)
+ts.setup {
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = true,
+    disable = {},
+  },
+  ensure_installed = {
+    "tsx",
+    "toml",
+    "fish",
+    "php",
+    "json",
+    "yaml",
+    "swift",
+    "css",
+    "html",
+    "lua",
+		"c"
+  },
+  autotag = {
+    enable = true,
+  },
+}
