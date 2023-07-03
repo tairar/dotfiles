@@ -12,5 +12,7 @@ require('jetpack.paq') {
   -- ここの中に、プラグインを追記していきます。
   {'tani/vim-jetpack', opt = 1}, -- bootstrap
 	{'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'},
-	'windwp/nvim-ts-autotag'	
+	'windwp/nvim-ts-autotag',
+	'OmniSharp/omnisharp-vim',
+	'dense-analysis/ale'
 }
